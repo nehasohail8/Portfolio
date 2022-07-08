@@ -89,7 +89,16 @@ html {
         font-family: Arial, Helvetica, sans-serif;    
         font-weight:400;
         color: rgb(150, 24, 239); 
+        display: flex;
+  align-items: center;
+  justify-content: center;
      }
+
+
+.info {
+  font-size: 20px;
+  padding-left: 20px;
+}
 
 
      .dp:hover{
@@ -200,15 +209,24 @@ html {
     <div class="about">
         <h>About Me</h>
         <br><br><br>
-        <span style="display:inline-flex;">
-        <p id='aboutme' style="margin:100px; text-align-last: left; color: #474444; font-size: large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-            Hi, I'm Neha Sohail, a sophomore in Computer Science<br> Specialist at the<br> University of Toronto and<br> currently working as a graphic<br> team associate in the Math and Computer Science Society.
-
-<br>My interests lie primarily in<br> Data Science and Web Development.
-<br><br> Outside of the classroom, <br> I thoroughly enjoy painting and photography.<br>
-check out my <br>GitHub to have an insight into the cool projects that<br>
-        <img class="dp"  id='dp' style="margin:20px ;  box-shadow: 10px 6px 5px 4px #b3afb39d;" src="dp.jpg" height="400px">
-        </span>   
+        <div id="info">
+        <p id='aboutme' style="margin:4%; text-align-last: center; color: #474444; font-size: large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            Hi, I'm Neha Sohail, a sophomore in Computer Science<br>
+            Specialist at the University of Toronto and currently<br>
+            working as a graphic team associate in the Math<br>
+            and Computer Science Society. My interests lie<br>
+            primarily in Data Science and Web Development<br>
+            <br>
+            Outside of the classroom, I thoroughly <br>
+            enjoy painting and photography. <br>
+            check out my 
+            GitHub to have an insight <br> into the cool projects that<br>
+            </p>
+        </div>
+        <div id="profileimage">   
+        <img class="dp"  id='dp' style="margin:0px ;  box-shadow: 10px 6px 5px 4px #b3afb39d;" src="dp.jpg" height="400px">
+        </span> 
+        </div>  
     </div>
     
     <div class="projects" style="margin: 30px;">
@@ -247,8 +265,8 @@ check out my <br>GitHub to have an insight into the cool projects that<br>
         <p class="text" style="display:none ;">I'm working as a video and graphic design associate at MCSS ( math and computer science society)</p>
         <p class="text" id='one' style="display:none ;">I'm working as a web developer intern at NRSP</p>
         <div class="items">
-            <button onclick="display()" id="ex">Video and Graphic Design Associate</button>
-            <button onclick="displayone()" id="ex">Web developer Intern</button>
+            <button onclick="display()" style="cursor:pointer ;" id="ex">Video and Graphic Design Associate</button>
+            <button onclick="displayone()"  style="cursor: pointer;"ex">Web developer Intern</button>
         </div>
     </div>
     </main>
@@ -256,7 +274,7 @@ check out my <br>GitHub to have an insight into the cool projects that<br>
     <div style="padding: 10%">
         <h>CONTACT ME</h>
         <br><br>   
-        <h  id="contactme" style="font-size:25px; color: rgb(0, 0, 0); ">Whether it's a job opportunity,
+        <h  id="contactme" style="font-size:25px; color: rgb(0, 0, 0); ">Whether it's a job opportunity, invite to a collaborative project
 
         or feedback on my portfolio, <br> my inbox is open!</h>
         <br><br><br>
