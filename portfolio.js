@@ -5,12 +5,8 @@ function dark(){
             document.body.style.color='black';
             document.querySelector('.projects').style.color="black";
             document.querySelector('header').style.background="#e3e3e34f";
-            document.querySelector('button').style.color="black";
             document.querySelector('#contactme').style.color="black";
             document.querySelector('#aboutme').style.color="black";
-            document.querySelector('.one').style.color="black";
-            document.querySelector('.two').style.color="black";
-            document.querySelector('.three').style.color="black";
 
                var image = document.getElementById('moon');
                 image.src="moon.png"
@@ -24,9 +20,6 @@ else{
     document.querySelector('#aboutme').style.color="white";
     document.querySelector('header').style.background="rgb(29, 28, 28)";
     document.querySelector('#contactme').style.color="white";
-    document.querySelector('.one').style.color="white";
-    document.querySelector('.two').style.color="white";
-    document.querySelector('.three').style.color="white";
     document.getElementById("dp").style.boxShadow = "5px 5px 10px white";
     const nodeList = document.querySelectorAll("h3");
 
@@ -67,8 +60,6 @@ function displayone(){
     }   
 
 }
-
-// ("#up").click(function(){$(document).scrollTop(100)});
 function scrollWin(num) {
     window.scrollTo(0, num);
   }

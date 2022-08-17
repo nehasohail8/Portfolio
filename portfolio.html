@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+    <style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+        body{
+            background-color: rgb(255, 255, 255);
+    
+        }
+
+        header{
+            background-color: #bcbcbc65;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 99%; /* Full width */
+            z-index: 100;
+
+        }
+        h3{
+            float: right;
+            color: #787575;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h3:hover{
+            cursor: pointer;
+            text-decoration:underline;
+        }
+
+        .intro{
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        h{
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 48px;
+        }
+
+        .intro > h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .intro > .move {
+            animation: MoveUpDown 1s linear infinite;
+            position: relative;
+            left: 0;
+            bottom: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        @keyframes MoveUpDown {
+        0%, 100% {
+            bottom: -20px;
+        }
+        20% {
+            bottom: 10px;
+        }
+
+        }
+
+     button{
+        border-width: 0px;
+        float: right;
+            color: #787575;
+            padding: 25px 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            background-color:#78757500
+     } 
+     
+     button:hover{
+        background-color:#7875752d
+     }
+
+
+     .about{
+        text-align: center;
+        margin-top: 90px;
+        font-family: Arial, Helvetica, sans-serif;    
+        font-weight:400;
+        color: rgb(150, 24, 239); 
+        display: flex;
+  align-items: center;
+  justify-content: center;
+     }
+
+
+.info {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+
+     .dp:hover{
+        height: 410px;
+
+     }
+
+
+     .projects{
+
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom:10%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:400;
+        color: rgb(90, 87, 92); 
+        font-size: small;
+     }
+
+     #up{
+        color: rgb(16, 13, 13);
+        text-decoration: none;
+        font-weight: bold;
+     }
+
+     div > #up:hover{
+        cursor: pointer;
+     }
+
+     * {
+  box-sizing: border-box;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    </style> 
+    
+
+<head>
+    <title>Neha Sohail - A Software Developer</title>
+    <script src="portfolio.js"></script>
+    <link rel="icon" type="image/png" href="Add a heading - Copy.png">
+</head>
+<body>
+    <header>
+            <img src="Add a heading.png" width="75px">
+             <button onclick="dark()"><img id='moon' src="moon.png" width="19px"></button>
+             <button onclick="scrollWin(3300)">Contact</button>
+             <button onclick="scrollWin(1100)">Projects</button>
+             <button onclick="scrollWin(580)">About</button>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h>Hello, <b>I'm Neha Sohail,</b></h>
+            <br>
+            <h style="color: rgb(153, 44, 231); font-weight: bolder; font-size: 3vw;">a computer science student from Canada.</h>
+            <br><br><br><br><br><br>
+            <a href="https://www.linkedin.com/in/neha-sohail/"><img src="icons8-linkedin-circled-50 (1).png" width="35px"></a>
+            <a href="https://github.com/nehasohail8"><img src="icons8-github-50.png" width="35px"></a>
+            <br><br>
+            <h1>Learn More</h1>
+            <h1 class="move"> V</h1>
+        </div>
+        
+    <div class="about">
+        <h><b>About Me</b></h>
+        <br><br><br>
+        <div id="info">
+        <p id='aboutme' style="margin:3rem; text-align-last: center; color: #474444; font-size: large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        I'm a sophomore studying Computer <br> Science
+            at the University of Toronto. <br> I aim to deepen my knowledge  about technology and <br> explore various fields of cs including<br> data science, AL/ML and web development<br>
+            <br>check out my 
+            GitHub to have an insight <br> into the cool projects that i have built! :D <br>
+            </p>
+        </div>
+        <div id="profileimage">   
+        <img class="dp"  id='dp' style="margin:0px ;  box-shadow: 10px 6px 5px 4px #b49deaa5;" src="404DD91F-7C07-46E5-8DFC-119CD4DC251F.jpeg" height="400px">
+        </span> 
+        </div>  
+    </div>
+    <div class="projects">
+        <h style="color:rgb(82, 49, 231);"><b>Projects</b></h>
+        <div class="row">
+            <div class="row">
+             <a href="https://github.com/nehasohail8/To-do-list"><img src="1.png" height="250px" style="margin: 20px;"> </a>  
+             <a href="https://github.com/nehasohail8/User-Registration-System"><img src="2.png" height="250px" style="margin: 20px;"> </a>
+             <a href="https://github.com/nehasohail8/E-commerce-website-"><img src="3.png" height="250px" style="margin: 20px;"></a>
+             <a href="https://github.com/nehasohail8/Weather-App"><img src="8.png" height="250px" style="margin: 20px;"></a>
+            </div>
+            <div class="row">
+                <a href="https://github.com/nehasohail8/Snake-Game-Python"><img src="4.png" height="250px" style="margin: 20px;"></a>
+                <a href="https://github.com/nehasohail8/Simple-Calculator-JS"><img src="5.png" height="250px" style="margin: 20px;"> </a>
+                <a href="https://github.com/nehasohail8/Huffman-Compression-Decompression"><img src="6.png" height="250px"style="margin: 20px;"> </a>
+                <a href="https://nehasohail8.github.io/Portfolio/"><img src="NEHA.png" height="250px" style="margin: 20px;"></a>
+            </div>
+        </div>      
+    </div>
+    </main>
+    <footer style="text-align: center;">
+    <div>
+        <h><b>GET IN TOUCH.</b></h>
+        <br><br>   
+        <h  id="contactme" style="font-size:25px; color: rgb(0, 0, 0); ">
+            I would be happy to further discuss my experiences with you <br> or perhaps, be a part of your next exiciting project, whatever it might be, my inbox is open! <br> simply shoot me an email or message me on LinkedIn!
+        <br><br>
+        <h4><a style=" padding:1%; color:rgb(255, 255, 255); text-decoration: none; border-radius: 30px; background-color: #942ef4;" href="https://outlook.office.com/mail/">email me</a></h4>
+        <h2><b>Neha.sohail@mail.utoronto.ca</b></h2>
+    </div>  
+    <div style="background-image: url('animated.gif'); background-repeat: no-repeat; background-size: cover; padding-top: 1.5%;">
+        <a href="#" id="up">🚀 Click me to scroll to the top! 🚀</a>
+        <h4>Made with JS by Neha Sohail</h4>      
+        <a href="https://www.linkedin.com/in/neha-sohail/"><img src="icons8-linkedin-circled-50 (1).png" width="35px"></a>
+        <a href="https://github.com/nehasohail8"><img src="icons8-github-50.png" width="35px"></a>
+    </div>
+    </footer>
+
+
+
+</body>
+</htmL>
